@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GAMBAシステム｜江原予備校</title>
+<title>GAMBAシステム デモページ｜江原予備校 高校・大学受験部</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@700&display=swap');
   :root {
@@ -67,6 +67,10 @@
   .s6 .card-category{ background:#1a6b9a; color:white; }
   .s6 .card-footer-link{ background:#e8f4fd; color:#1a6b9a; }
 
+  .s7 .card-emoji{ background:#e6f3f2; }
+  .s7 .card-category{ background:#0097a7; color:white; }
+  .s7 .card-footer-link{ background:#e6f3f2; color:#0097a7; }
+
   .features-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-bottom:48px; }
   @media(max-width:600px){ .features-grid{ grid-template-columns:1fr; } }
   .feature-item { background:var(--white); border-radius:var(--radius); padding:20px 16px; text-align:center; box-shadow:0 2px 8px rgba(0,0,0,0.05); }
@@ -82,9 +86,29 @@
 
   footer { text-align:center; padding:24px; font-size:0.72rem; color:var(--muted); border-top:1px solid #e0e0e0; margin-top:40px; }
 
+  /* 中学復習セクション */
+  .review-section { background:linear-gradient(135deg,#fff8f0 0%,#fef3e6 100%); border:2px solid #f0d9b8; border-radius:14px; padding:24px 22px 26px; margin-bottom:48px; }
+  .review-header { display:flex; align-items:center; gap:10px; margin-bottom:8px; flex-wrap:wrap; }
+  .review-badge { background:#c97a2c; color:white; font-size:0.68rem; font-weight:700; padding:3px 10px; border-radius:20px; letter-spacing:0.06em; }
+  .review-label { font-size:0.72rem; color:#8b5a2b; font-weight:700; }
+  .review-title { font-family:'Noto Serif JP',serif; font-size:1.1rem; font-weight:700; color:#5d3a1a; margin-bottom:8px; line-height:1.5; }
+  .review-desc { font-size:0.78rem; color:#6b4828; line-height:1.8; margin-bottom:18px; }
+  .review-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+  @media(max-width:600px){ .review-grid{ grid-template-columns:1fr; } }
+  .review-card { background:white; border-radius:10px; padding:16px 14px; text-decoration:none; color:inherit; display:block; box-shadow:0 2px 8px rgba(139,90,43,0.08); transition:transform 0.2s,box-shadow 0.2s; border:1px solid #f0e0c8; }
+  .review-card:hover { transform:translateY(-2px); box-shadow:0 4px 14px rgba(139,90,43,0.15); }
+  .review-card-emoji { font-size:1.6rem; margin-bottom:6px; }
+  .review-card-cat { font-size:0.6rem; font-weight:700; color:#c97a2c; letter-spacing:0.08em; margin-bottom:3px; }
+  .review-card-name { font-size:0.88rem; font-weight:700; color:var(--text); line-height:1.4; margin-bottom:4px; }
+  .review-card-desc { font-size:0.7rem; color:var(--muted); line-height:1.6; }
+
   .s-chem .card-emoji{ background:#e6f7f0; }
   .s-chem .card-category{ background:#1b6e4b; color:white; }
   .s-chem .card-footer-link{ background:#e6f7f0; color:#1b6e4b; }
+
+  .s-mathb .card-emoji{ background:#e3f0ff; }
+  .s-mathb .card-category{ background:#2055b0; color:white; }
+  .s-mathb .card-footer-link{ background:#e3f0ff; color:#2055b0; }
 </style>
 </head>
 <body>
@@ -106,41 +130,123 @@
   </div>
 </div>
 
-<div class="about-band">▶ 以下のコンテンツで学習を進めましょう</div>
+<div class="about-band">▶ 以下のコンテンツは無料でお試しいただけます</div>
 
 <div class="container">
 
-  <div class="section-title">GAMBAコンテンツ（大学受験対応）</div>
+  <div class="section-title">体験できるGAMBAコンテンツ（高校・大学受験対応）</div>
+
+  <!-- 英検2級英文法シリーズ紹介バナー -->
+  <div style="background:linear-gradient(135deg,#1a3a6b 0%,#0097A7 100%);border-radius:14px;padding:22px 24px 20px;margin-bottom:20px;color:#fff">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+      <span style="background:var(--orange);color:#fff;font-size:0.7rem;font-weight:700;padding:3px 10px;border-radius:20px;letter-spacing:0.08em">完成</span>
+      <span style="font-size:0.75rem;color:rgba(255,255,255,0.7)">英語</span>
+    </div>
+    <div style="font-family:'Noto Serif JP',serif;font-size:1.15rem;font-weight:700;color:#f7b733;margin-bottom:8px;line-height:1.5">
+      📘 英検2級・高認対応　英文法　Unit 1〜12
+    </div>
+    <div style="font-size:0.8rem;color:rgba(255,255,255,0.9);line-height:1.9;margin-bottom:14px">
+      品詞・時制・助動詞から関係詞・接続詞まで、Unit 1〜12 で高校英文法を完全網羅しました。<br>
+      <b style="color:#f7b733">高校英文法が苦手な方でも、短期間（1か月程度）でマスターできます。</b><br>
+      説明を読んだら右隣の練習ボタンでその場すぐ確認。全問正解で🎉花吹雪！<br>
+      重要語には単語帳機能つき。タップして保存 → 復習テスト4択で定着チェック。<br>
+      ぜひやってみてください！
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0">
+      <span style="background:rgba(255,255,255,0.15);border-radius:20px;padding:4px 10px;font-size:0.7rem">Unit 1 品詞と文の成り立ち</span>
+      <span style="background:rgba(255,255,255,0.15);border-radius:20px;padding:4px 10px;font-size:0.7rem">Unit 2 時制</span>
+      <span style="background:rgba(255,255,255,0.15);border-radius:20px;padding:4px 10px;font-size:0.7rem">Unit 3 助動詞</span>
+      <span style="background:rgba(255,255,255,0.15);border-radius:20px;padding:4px 10px;font-size:0.7rem">Unit 4 不定詞</span>
+      <span style="background:rgba(255,255,255,0.15);border-radius:20px;padding:4px 10px;font-size:0.7rem">Unit 5 動名詞</span>
+      <span style="background:rgba(255,255,255,0.15);border-radius:20px;padding:4px 10px;font-size:0.7rem">Unit 6 分詞</span>
+      <span style="background:rgba(255,255,255,0.15);border-radius:20px;padding:4px 10px;font-size:0.7rem">Unit 7 比較</span>
+      <span style="background:rgba(255,255,255,0.15);border-radius:20px;padding:4px 10px;font-size:0.7rem">Unit 8 受動態</span>
+      <span style="background:rgba(255,255,255,0.15);border-radius:20px;padding:4px 10px;font-size:0.7rem">Unit 9 仮定法</span>
+      <span style="background:rgba(255,255,255,0.15);border-radius:20px;padding:4px 10px;font-size:0.7rem">Unit 10 関係詞①</span>
+      <span style="background:rgba(255,255,255,0.15);border-radius:20px;padding:4px 10px;font-size:0.7rem">Unit 11 関係詞②</span>
+      <span style="background:rgba(255,255,255,0.15);border-radius:20px;padding:4px 10px;font-size:0.7rem">Unit 12 接続詞</span>
+    </div>
+  </div>
+
+  <!-- 中学範囲の復習セクション -->
+  <div class="review-section">
+    <div class="review-header">
+      <span class="review-badge">復習</span>
+      <span class="review-label">中学範囲の総復習</span>
+    </div>
+    <div class="review-title">📚 高校学習の前に　中学範囲の基礎固め</div>
+    <div class="review-desc">
+      「中学の内容に少し不安がある」「もう一度やり直したい」という方のための復習教材です。<br>
+      <b style="color:#8b5a2b">高校英文法・数学・理科に進む前の土台づくりに最適。</b>自分のペースで取り組めます。
+    </div>
+    <div class="review-grid">
+
+      <a class="review-card" href="https://realizefield.github.io/j-english/" target="_blank">
+        <div class="review-card-emoji">📘</div>
+        <div class="review-card-cat">英語</div>
+        <div class="review-card-name">中学英文法【復習】</div>
+        <div class="review-card-desc">中1〜中3の英文法を全34単元で総復習。be動詞から不定詞・受動態まで段階的に学習。</div>
+      </a>
+
+      <a class="review-card" href="https://realizefield.github.io/j-engglish-word/" target="_blank">
+        <div class="review-card-emoji">📖</div>
+        <div class="review-card-cat">英語</div>
+        <div class="review-card-name">中学英単語【復習】</div>
+        <div class="review-card-desc">中学英単語1096語を21カテゴリ119単元で効率的に復習。高校英語の基礎固めに。</div>
+      </a>
+
+      <a class="review-card" href="https://realizefield.github.io/j-math/" target="_blank">
+        <div class="review-card-emoji">🔢</div>
+        <div class="review-card-cat">数学</div>
+        <div class="review-card-name">中学数学計算【復習】</div>
+        <div class="review-card-desc">分数・正負の数・文字式・方程式・平方根まで、中学数学の計算分野を導入から確認テストまで。</div>
+      </a>
+
+    </div>
+  </div>
 
   <div class="cards-grid">
-
-    <a class="subject-card s1" href="https://realizefield.github.io/h-english/jisei.html" target="_blank">
+    <a class="subject-card s2" href="https://realizefield.github.io/kounin_eng_grammer/kounineng-index.html" target="_blank" style="border:3px solid var(--orange);position:relative">
+      <div style="position:absolute;top:-1px;right:-1px;background:var(--orange);color:white;font-size:0.62rem;font-weight:700;padding:3px 10px;border-radius:0 12px 0 8px;letter-spacing:0.08em">Unit 1〜12</div>
       <div class="card-top">
-        <div class="card-emoji">📝</div>
+        <div class="card-emoji">📘</div>
         <div class="card-info">
           <div class="card-category">英語</div>
-          <div class="card-name">英文法</div>
+          <div class="card-name">英検2級・高認　英文法<br><span style="font-size:0.75rem;font-weight:400">Unit 1〜12　完全網羅</span></div>
           <div class="card-level">⭐⭐　基礎〜標準レベル</div>
         </div>
       </div>
-      <div class="card-desc">高校英文法の重要項目を体系的に学習。時制・助動詞・関係詞など入試頻出文法をしっかり固めます。</div>
+      <div class="card-desc">品詞・時制・助動詞・不定詞・動名詞・分詞・比較・受動態・仮定法・関係詞・接続詞まで12単元を完全網羅。高校英文法が苦手な方でも1か月程度でマスターできます。</div>
       <div class="card-footer-link">学習する <span>→</span></div>
     </a>
 
-    <a class="subject-card s2" href="https://realizefield.github.io/h_math/" target="_blank">
+    <a class="subject-card s1" href="https://realizefield.github.io/kounin-joho/joho_index.html" target="_blank">
+      <div class="card-top">
+        <div class="card-emoji">💻</div>
+        <div class="card-info">
+          <div class="card-category">情報</div>
+          <div class="card-name">情報Ⅰ</div>
+          <div class="card-level">⭐　基礎レベル</div>
+        </div>
+      </div>
+      <div class="card-desc">新学習指導要領対応の「情報Ⅰ」。データ活用・プログラミング的思考の基礎を学べます。</div>
+      <div class="card-footer-link">デモを見る <span>→</span></div>
+    </a>
+
+    <a class="subject-card s7" href="https://realizefield.github.io/h_math/" target="_blank">
       <div class="card-top">
         <div class="card-emoji">📐</div>
         <div class="card-info">
           <div class="card-category">数学</div>
-          <div class="card-name">数学Ⅰ</div>
-          <div class="card-level">⭐⭐　基礎〜標準レベル</div>
+          <div class="card-name">数学Ⅰ　式の計算</div>
+          <div class="card-level">⭐⭐　基礎〜発展レベル</div>
         </div>
       </div>
-      <div class="card-desc">数学Ⅰの重要単元を段階的に学習。数と式・二次関数・図形と計量など基礎をしっかり固めます。</div>
-      <div class="card-footer-link">学習する <span>→</span></div>
+      <div class="card-desc">数学Ⅰ第1章「展開と因数分解」を全15ページで徹底攻略。乗法公式・たすきがけ・A置換・複二次式・対称式まで基礎から発展まで段階的に学べます。</div>
+      <div class="card-footer-link">デモを見る <span>→</span></div>
     </a>
 
-    <a class="subject-card s2" href="https://realizefield.github.io/h-math2/index_math2_ex.html" target="_blank">
+    <a class="subject-card s7" href="https://realizefield.github.io/h-math2/index_math2_ex.html" target="_blank">
       <div class="card-top">
         <div class="card-emoji">📊</div>
         <div class="card-info">
@@ -150,63 +256,11 @@
         </div>
       </div>
       <div class="card-desc">指数法則・指数関数のグラフ・指数方程式・不等式から，対数の定義・性質・対数方程式まで全単元を網羅。スライダーで動くグラフと花吹雪つきミニテストで楽しく学べます。</div>
-      <div class="card-footer-link">学習する <span>→</span></div>
+      <div class="card-footer-link">デモを見る <span>→</span></div>
     </a>
 
 
-    <a class="subject-card s1" href="https://realizefield.github.io/T_eng_word/t_index.html" target="_blank">
-      <div class="card-top">
-        <div class="card-emoji">📕</div>
-        <div class="card-info">
-          <div class="card-category">英語</div>
-          <div class="card-name">大学受験英単語（ターゲット1900）</div>
-          <div class="card-level">⭐⭐⭐　大学入試レベル</div>
-        </div>
-      </div>
-      <div class="card-desc">大学入試必須の重要英単語1900語を収録。フラッシュカード・四択クイズで効率よく定着。</div>
-      <div class="card-footer-link">学習する <span>→</span></div>
-    </a>
-
-    <a class="subject-card s1" href="https://realizefield.github.io/j-engglish-word/" target="_blank">
-      <div class="card-top">
-        <div class="card-emoji">📗</div>
-        <div class="card-info">
-          <div class="card-category">英語</div>
-          <div class="card-name">中学英単語</div>
-          <div class="card-level">⭐　基礎レベル</div>
-        </div>
-      </div>
-      <div class="card-desc">中学英語の基礎となる重要英単語を収録。高校英語への土台づくりに最適です。</div>
-      <div class="card-footer-link">学習する <span>→</span></div>
-    </a>
-
-    <a class="subject-card s1" href="https://realizefield.github.io/j-english/" target="_blank">
-      <div class="card-top">
-        <div class="card-emoji">✏️</div>
-        <div class="card-info">
-          <div class="card-category">英語</div>
-          <div class="card-name">中学英文法</div>
-          <div class="card-level">⭐　基礎レベル</div>
-        </div>
-      </div>
-      <div class="card-desc">中学英文法の重要項目を基礎からしっかり学習。高校英語につながる土台を固めます。</div>
-      <div class="card-footer-link">学習する <span>→</span></div>
-    </a>
-
-    <a class="subject-card s1" href="https://realizefield.github.io/kounin_eng_grammer/kounineng-index.html" target="_blank">
-      <div class="card-top">
-        <div class="card-emoji">📘</div>
-        <div class="card-info">
-          <div class="card-category">英語</div>
-          <div class="card-name">英検2級・高認英文法</div>
-          <div class="card-level">⭐⭐　標準〜大学受験レベル</div>
-        </div>
-      </div>
-      <div class="card-desc">英検2級・高認試験対応の英文法を効率よく習得。大学受験にも役立つ重要項目を網羅。</div>
-      <div class="card-footer-link">学習する <span>→</span></div>
-    </a>
-
-    <a class="subject-card s1" href="https://realizefield.github.io/eijukugo/ejukugo_h01.html" target="_blank">
+    <a class="subject-card s2" href="https://realizefield.github.io/eijukugo/ejukugo_h01.html" target="_blank">
       <div class="card-top">
         <div class="card-emoji">📝</div>
         <div class="card-info">
@@ -216,10 +270,10 @@
         </div>
       </div>
       <div class="card-desc">入試頻出の重要英熟語100を効率よくマスター。暗記カード方式で定着率が高い。</div>
-      <div class="card-footer-link">学習する <span>→</span></div>
+      <div class="card-footer-link">デモを見る <span>→</span></div>
     </a>
 
-    <a class="subject-card s1" href="https://realizefield.github.io/kounin_english_word/hs_index.html" target="_blank">
+    <a class="subject-card s2" href="https://realizefield.github.io/kounin_english_word/hs_index.html" target="_blank">
       <div class="card-top">
         <div class="card-emoji">📖</div>
         <div class="card-info">
@@ -229,10 +283,10 @@
         </div>
       </div>
       <div class="card-desc">英検2級・高認試験対応の英単語集。大学受験にも役立つ重要単語を暗記カード方式で習得。</div>
-      <div class="card-footer-link">学習する <span>→</span></div>
+      <div class="card-footer-link">デモを見る <span>→</span></div>
     </a>
 
-    <a class="subject-card s3" href="https://realizefield.github.io/seibutukiso/saibou1.html" target="_blank">
+    <a class="subject-card s3" href="https://realizefield.github.io/seibutukiso/gamba_kounin_science.html" target="_blank">
       <div class="card-top">
         <div class="card-emoji">🔬</div>
         <div class="card-info">
@@ -242,10 +296,36 @@
         </div>
       </div>
       <div class="card-desc">細胞・遺伝・生態など生物基礎の重要単元をわかりやすく解説。看護系にも対応。</div>
-      <div class="card-footer-link">学習する <span>→</span></div>
+      <div class="card-footer-link">デモを見る <span>→</span></div>
     </a>
 
-    <a class="subject-card s4" href="https://realizefield.github.io/koukyou/koukyo1.html" target="_blank">
+    <a class="subject-card s3" href="https://realizefield.github.io/kagaku/index.html" target="_blank">
+      <div class="card-top">
+        <div class="card-emoji">🧪</div>
+        <div class="card-info">
+          <div class="card-category">理科</div>
+          <div class="card-name">化学基礎</div>
+          <div class="card-level">⭐　基礎レベル</div>
+        </div>
+      </div>
+      <div class="card-desc">高校「化学基礎」の物質の構成を体系的に学習。原子・分子・イオン・化学結合など、共通テストや高認試験の頻出ポイントを基礎からマスター。</div>
+      <div class="card-footer-link">デモを見る <span>→</span></div>
+    </a>
+
+    <a class="subject-card s3" href="https://realizefield.github.io/mukikagaku/chemistry-app.html" target="_blank">
+      <div class="card-top">
+        <div class="card-emoji">⚗️</div>
+        <div class="card-info">
+          <div class="card-category">理科</div>
+          <div class="card-name">化学（無機化学）</div>
+          <div class="card-level">⭐⭐　標準〜大学受験レベル</div>
+        </div>
+      </div>
+      <div class="card-desc">高校化学の「無機化学」を体系的に学習。金属・非金属・気体の性質から工業的製法まで、入試頻出ポイントを効率よくマスター。</div>
+      <div class="card-footer-link">デモを見る <span>→</span></div>
+    </a>
+
+    <a class="subject-card s4" href="https://realizefield.github.io/koukyou/" target="_blank">
       <div class="card-top">
         <div class="card-emoji">🏛️</div>
         <div class="card-info">
@@ -255,7 +335,7 @@
         </div>
       </div>
       <div class="card-desc">新学習指導要領対応の「公共」。政治・経済・倫理の基礎を体系的に学べます。</div>
-      <div class="card-footer-link">学習する <span>→</span></div>
+      <div class="card-footer-link">デモを見る <span>→</span></div>
     </a>
 
     <a class="subject-card s4" href="https://realizefield.github.io/seikei/seikei_index.html" target="_blank">
@@ -267,8 +347,8 @@
           <div class="card-level">⭐⭐⭐　共通テスト対応</div>
         </div>
       </div>
-      <div class="card-desc">全14単元・社会契約論から平和主義まで体系的に網羅。共通テスト・センター試験の過去問91問を収録。説明・確認問題・正誤・過去問・フラッシュカードで完全マスター。</div>
-      <div class="card-footer-link">学習する <span>→</span></div>
+      <div class="card-desc">全14単元・社会契約論から平和主義まで体系的に網羅。共通テスト・センター試験の過去問91問を収録した本格仕様。説明・確認問題・正誤・過去問・フラッシュカードで完全マスター。</div>
+      <div class="card-footer-link">デモを見る <span>→</span></div>
     </a>
 
     <a class="subject-card s5" href="https://realizefield.github.io/kotenbunpou/index.html" target="_blank">
@@ -281,25 +361,12 @@
         </div>
       </div>
       <div class="card-desc">大学入試に必須の古典文法を基礎からしっかり学習。助動詞・助詞・活用形を体系的にマスター。</div>
-      <div class="card-footer-link">学習する <span>→</span></div>
+      <div class="card-footer-link">デモを見る <span>→</span></div>
     </a>
 
-    <a class="subject-card s6" href="https://realizefield.github.io/joho1/joho1.html" target="_blank">
+    <a class="subject-card s6" href="https://realizefield.github.io/kumamoto-univ-2025/index.html" target="_blank">
       <div class="card-top">
-        <div class="card-emoji">💻</div>
-        <div class="card-info">
-          <div class="card-category">情報</div>
-          <div class="card-name">情報Ⅰ</div>
-          <div class="card-level">⭐　基礎レベル</div>
-        </div>
-      </div>
-      <div class="card-desc">新学習指導要領対応の「情報Ⅰ」。データ活用・プログラミング的思考の基礎を学べます。</div>
-      <div class="card-footer-link">学習する <span>→</span></div>
-    </a>
-
-    <a class="subject-card s1" href="https://realizefield.github.io/kumamoto-univ-2025/index.html" target="_blank">
-      <div class="card-top">
-        <div class="card-emoji">🎓</div>
+        <div class="card-emoji">📖</div>
         <div class="card-info">
           <div class="card-category">英語</div>
           <div class="card-name">熊本大学　英語長文</div>
@@ -307,7 +374,20 @@
         </div>
       </div>
       <div class="card-desc">熊本大学の英語長文を徹底解説。構文・語彙・読解のポイントを丁寧にサポート。</div>
-      <div class="card-footer-link">学習する <span>→</span></div>
+      <div class="card-footer-link">デモを見る <span>→</span></div>
+    </a>
+
+    <a class="subject-card s2" href="https://realizefield.github.io/T_eng_word/t_index.html" target="_blank">
+      <div class="card-top">
+        <div class="card-emoji">📕</div>
+        <div class="card-info">
+          <div class="card-category">英語</div>
+          <div class="card-name">大学受験英単語</div>
+          <div class="card-level">⭐⭐⭐　大学入試レベル</div>
+        </div>
+      </div>
+      <div class="card-desc">大学入試必須の重要英単語1900語を収録。フラッシュカード・四択クイズで効率よく定着。</div>
+      <div class="card-footer-link">デモを見る <span>→</span></div>
     </a>
 
 
@@ -321,7 +401,20 @@
         </div>
       </div>
       <div class="card-desc">酸化数の定義から酸化剤・還元剤・半反応式まで全4章14単元。語群穴埋め・ステッパー・A/B/C自己評価搭載。ミニテスト100問以上で確実に定着。</div>
-      <div class="card-footer-link">学習する <span>→</span></div>
+      <div class="card-footer-link">デモを見る <span>→</span></div>
+    </a>
+
+    <a class="subject-card s-mathb" href="https://realizefield.github.io/h-math2/index_math2_ex.html" target="_blank">
+      <div class="card-top">
+        <div class="card-emoji">📐</div>
+        <div class="card-info">
+          <div class="card-category">数学</div>
+          <div class="card-name">数学B　数列</div>
+          <div class="card-level">⭐⭐⭐　大学受験対応</div>
+        </div>
+      </div>
+      <div class="card-desc">等差・等比・Σ計算・階差・群数列・漸化式（基本〜発展・隣接3項間）まで全8単元。「なぜそうするのか」を丁寧に解説。4択・ヒント・花吹雪・A/B/C自己評価搭載。</div>
+      <div class="card-footer-link">デモを見る <span>→</span></div>
     </a>
   </div>
 
@@ -340,25 +433,27 @@
     <div class="feature-item">
       <div class="feature-icon">🎯</div>
       <div class="feature-title">基礎〜入試レベルまで</div>
-      <div class="feature-text">基礎から大学入試レベルまで段階的に対応。どこからでも始められます。</div>
+      <div class="feature-text">中学基礎から大学入試レベルまで段階的に対応。どこからでも始められます。</div>
     </div>
   </div>
 
   <div class="cta-section">
-    <div class="cta-title">わからないことは遠慮なく聞こう</div>
+    <div class="cta-title">まずは無料体験指導へ</div>
     <div class="cta-text">
-      学習でわからないことがあれば、<br>
-      講師に気軽に質問してください。<br>
-      一緒に合格を目指しましょう！
+      GAMBAシステムを実際に体験しながら、<br>
+      あなたに合った学習プランをご提案します。<br>
+      お気軽にお問い合わせください。
     </div>
-    <a class="cta-btn" href="tel:0963826761">📞 096-382-6761</a>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+      <a class="cta-btn" href="tel:0963826761">📞 096-382-6761</a>
+      <a class="cta-btn" href="https://kogenyobikou.jp/contact" target="_blank" style="background:var(--navy-light);color:var(--navy);border:2px solid var(--navy);">✉️ お問い合わせフォーム</a>
+    </div>
   </div>
 
 </div>
 
-<footer>
-  © 江原予備校 / 株式会社 アイラコーポレーション<br>
-  〒862-0950　熊本市中央区水前寺3丁目1-3<br>
+<footer>© 江原予備校 / NPO法人Toppa
+  〒862-0950　熊本市中央区水前寺3-1-3
   TEL：096-382-6761
 </footer>
 
